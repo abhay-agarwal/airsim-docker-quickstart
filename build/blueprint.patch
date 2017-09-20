@@ -1,0 +1,11 @@
+--- AirBlueprintLib.cpp	2017-09-19 12:33:15.384884550 -0700
++++ AirBlueprintLib.cpp.updated	2017-09-19 12:31:44.650601778 -0700
+@@ -85,7 +85,7 @@
+ }
+ template UChildActorComponent* UAirBlueprintLib::GetActorComponent(AActor*, FString);
+ template USceneCaptureComponent2D* UAirBlueprintLib::GetActorComponent(AActor*, FString);
+-template UStaticMeshComponent* UAirBlueprintLib::GetActorComponent(AActor*, FString);
++//template UStaticMeshComponent* UAirBlueprintLib::GetActorComponent(AActor*, FString);
+ template URotatingMovementComponent* UAirBlueprintLib::GetActorComponent(AActor*, FString);
+ 
+ template<typename T>
