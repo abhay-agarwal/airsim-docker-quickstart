@@ -36,8 +36,8 @@ Running it headless
 ---
 This container can be run headless by using a [fake display buffer](https://en.wikipedia.org/wiki/Xvfb) or by using a VNC display buffer. Then, you can stream frames like any VNC does, or just return some output without keeping the frames. Keep in mind that most cloud container engines (GKE, Amazon Cloud, etc.) will not support this, because it requires use of shared resources that most containers are not given access to.
 
-We have not found a way to run Unreal completely headless (where no frame is rendered at all), but you can pass options to the docker command that will make the render super small. E.g.
+We have not found a way to run Unreal completely headless (where no frame is rendered at all), but you can pass options to the docker command that will make the render super small. E.g. run the docker with this command instead:
 
-`DISPLAY=:$PORT vglrun /home/unreal/Blocks/Binaries/Linux/Blocks-Linux-Shipping -ResX 1 -ResY 1`
+`vglrun Blocks/Binaries/Linux/Blocks-Linux-Shipping -ResX 1 -ResY 1`
 
 
